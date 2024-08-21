@@ -178,6 +178,8 @@ main{
     align-items: center;
     text-align: center;
     font-size: x-large;
+    position: sticky;
+    bottom: 0;
 
 }
 
