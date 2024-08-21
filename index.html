@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/pkb2.png">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        
+        <h1>Encriptador de texto</h1>
+
+    </header>
+    <main>
+        <div class="contenedor1">
+            <div>
+                <p id="textoEncriptar">
+                    <textarea name="texto"  id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+                    
+                </p>
+            </div>
+            <div id="advertencia">
+                <img id="advImg" src="./img/bi_exclamation-circle-fill.png" alt="warning"><p >Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button id="encriptar" class="boton">Encriptar</button>
+                <button id="desencriptar" class="boton">Desencriptar</button>
+            </div>
+
+        </div>
+        <div id="contenedor2" class="contenedor2"> 
+            <div id="contenedorTexto" class="contenedorTexto ">
+                <div id="textoMostrar" class="textoMostrar">
+                    
+                </div>
+                <div class="botones">
+                    <button id="copiar" class="boton">Copiar</button>
+                </div> 
+
+            </div>
+            <div id="contenedorPsyduck">
+                <div class="psyduck">
+                    <img  src="./img/psyduck-confused.gif" alt="psyduck-confused">
+                </div>
+                <div class="mensajes">
+                    <p class="noEncontrado">Ningún mensaje fue encontrado</p>
+                    <p class="ingresaTexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+            </div>
+        </div>       
+    </main>
+    <footer class="footer">
+        <p>Creado por: Samantha Hernández Caballero</p>
+
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

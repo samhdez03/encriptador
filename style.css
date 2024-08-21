@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Jersey+10&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fuente-pokemon: "Jersey 10", sans-serif;
+    --fuente-boton: "Bungee Tint", sans-serif;
+    --color-amarillo: #FFD54A ;
+    --color-am-mate: #DDAE37;
+    --color-cafecito: #E6A452;
+    --color-cafecito2: #B07F41;
+    --color-claro: #FFEEBD;
+    --blanco: #FFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-amarillo);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--fuente-pokemon);
+   
+}
+
+header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    padding: 2rem 2rem 0 2rem;
+}
+
+h1{
+    padding-left: 2rem;
+    font-family: var(--fuente-boton);
+}
+
+input{
+    border-color: transparent;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    height: 78vh;
+}
+
+.contenedor1{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 55%;
+    padding: 2rem;
+    
+}
+
+#texto{
+    white-space: initial;
+    overflow: scroll;
+    width: 90%;
+    height: 22rem;
+    max-height: 22rem;
+    font-size: xx-large;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--color-claro);
+    padding: 1rem;
+}
+
+#advertencia{
+    display: flex;
+    font-size: x-large;
+
+}
+#advImg{
+    padding-right: 0.3rem;
+    min-width: 1.5rem;
+
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    padding: .8rem;
+    justify-content: space-evenly;
+    
+}
+
+.boton{
+    display:flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: var(--fuente-boton);
+    font-size: x-large;
+    border-radius: 1.5rem;
+}
+
+#encriptar{
+    background-color:var(--blanco);
+}
+
+#encriptar:hover{
+    background-color:var(--color-claro);
+}
+
+#desencriptar{
+    background-color:var(--blanco) ;
+}
+#desencriptar:hover{
+    background-color: var(--color-claro);
+}
+
+.contenedor2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-cafecito);
+    width: 35%;
+    border-radius: 1rem;   
+    
+}
+
+.textoMostrar{
+    display: flex;
+    overflow: scroll;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    width: 30vw;
+    min-height: 25rem;
+    max-height: 27rem;
+    font-size: xx-large;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--color-claro);
+}
+
+.contenedorTexto{
+    display: none;
+}
+.contenedorTextoMostrar{
+    display: block;
+}
+
+.contenedor2 .psyduck{
+    padding: 2.5rem;
+    width: 80%;
+}
+.contenedor2 .psyduck img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.contenedor2 .mensajes {
+    padding: 2.5rem;
+    padding-top: 0;
+    text-align: center;
+}
+.contenedor2 .noEncontrado{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.contenedor2 .mensajes .ingresaTexto{
+    font-size: x-large;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: x-large;
+
+}
+
+@media (max-width: 768px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: x-large;
+    
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+    #advImg{
+        padding-right: 0.3rem;
+        min-width: 2.5rem;
+    
+    }
+
+    .contenedor1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        width: 85%;
+        padding: 2rem;
+        
+    }
+
+    #texto{
+        white-space: initial;
+        overflow: hidden;
+        width: 80vw;
+        height: 22rem;
+        font-size: xx-large;
+        border: none;
+        border-radius: 0.3rem;
+        resize: none;
+        background-color: var(--color-claro);
+    }
+
+    .contenedor2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-cafecito);
+        width: 90%;
+        min-height: 40vh;
+        border-radius: 1rem;
+        margin: 2rem;
+       
+    }
+
+    .textoMostrar{
+        display: flex;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        width: 70vw;
+        min-height: 10rem;
+        max-height: 22vh;
+        font-size: xx-large;
+        border: none;
+        border-radius: 1rem;
+        background-color: var(--color-claro);
+        overflow: scroll;
+    }
+    
+
+
+    .contenedor2 .psyduck{
+        display: none;
+    }
+ 
+}
+
+@media (max-width: 375px){
+    h1{
+        padding-left: 0rem;
+        font-family: var(--fuente-boton);
+        font-size:xx-large;
+    }
+    
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: x-large;
+    
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        margin-left: 0;
+    }
+    #advImg{
+        padding-right: 0.3rem;
+        min-width: 2.5rem;
+    
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        padding: .3rem;
+        justify-content: space-around;
+        
+    }
+
+    .boton{
+        display:flex;
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+        font-family: var(--fuente-boton);
+        font-size: x-large;
+        border-radius: 1.5rem;
+    }
+
+    .contenedor1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0rem;
+        width: 85%;
+        padding: 2rem;
+        
+    }
+    #texto{
+        white-space: initial;
+        overflow: hidden;
+        width: 100%;
+        height: 15rem;
+        font-size: x-large;
+        border: none;
+        border-radius: 0.3rem;
+        resize: none;
+        background-color: var(--color-claro);
+    }
+
+    .contenedor2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-cafecito);
+        width: 100%;
+        min-height:35vh;
+        border-radius: 1rem;
+        margin: 2rem;
+       
+    }
+
+    .textoMostrar{
+        display: flex;
+        margin-top: 0.5rem;
+        padding: 1rem;
+        width: 70vw;
+        min-height: 20vh;
+        max-height: 22vh;
+        font-size: x-large;
+        border: none;
+        border-radius: 1rem;
+        background-color: var(--color-claro);
+        overflow: scroll;
+    }
+    
+    .contenedor2 .psyduck{
+        display: none;
+    }
+
+    .contenedor2 .mensajes {
+        padding: .5rem;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+        min-height: 10vh;
+        align-items: center;
+        text-align: center;
+        font-size: x-large;
+    
+    }
+ 
+}
