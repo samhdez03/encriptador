@@ -59,8 +59,8 @@ main{
     white-space: initial;
     overflow: scroll;
     width: 90%;
-    height: 22rem;
-    max-height: 22rem;
+    height: 15rem;
+    max-height: 17rem;
     font-size: xx-large;
     border: none;
     border-radius: 0.3rem;
@@ -178,9 +178,6 @@ main{
     align-items: center;
     text-align: center;
     font-size: x-large;
-    position: sticky;
-    bottom: 0;
-
 }
 
 @media (max-width: 768px){
@@ -196,6 +193,7 @@ main{
         display: flex;
         flex-direction: column;
         height: 100vh;
+        min-height: 80vh;
     }
     #advImg{
         padding-right: 0.3rem;
@@ -233,7 +231,7 @@ main{
         align-items: center;
         background-color: var(--color-cafecito);
         width: 90%;
-        min-height: 40vh;
+        min-height: 30vh;
         border-radius: 1rem;
         margin: 2rem;
        
